@@ -24,17 +24,19 @@ ImportError: numpy.core.multiarray failed to import
 ```
 ## How to fix this?
 ```shell
-ls /System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/
+ls /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/
 ```
-to be continued ...
+Just remove the *numpy* folder from `/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/`, then everything will be ok. Of course, you could use *Virtualenv* for instead. All Roads Lead to Rome.
 
 ## Test your tensorflow
 ```python
 import tensorflow as tf
 hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
+# I tensorflow/core/common_runtime/local_device.cc:40] Local device intra op parallelism threads: 8
+# I tensorflow/core/common_runtime/direct_session.cc:58] Direct session inter op parallelism thread
 print(sess.run(hello))
-
+# Hello, TensorFlow!
 a = tf.constant(10)
 b = tf.constant(32)
 print(sess.run(a + b))
