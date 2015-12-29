@@ -7,16 +7,6 @@ Process on image detection with tensorflow library in Python
  
 ## Install tensorflow 
 
-## Error!?
-```python
-...
-ImportError: numpy.core.multiarray failed to import
-```
-## How to fix this?
-```shell
-ls /System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/
-```
-
 ```shell
 sudo pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorflow-0.6.0-py2-none-any.whl
 # then you will get "Successfully installed numpy-1.10.2 protobuf-3.0.0a3 setuptools-19.2 tensorflow-0.6.0 wheel-0.26.0"
@@ -26,6 +16,17 @@ sudo pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorf
 - Requirement already up-to-date: wheel in /Library/Python/2.7/site-packages (from tensorflow==0.6.0)
 - Requirement already up-to-date: numpy>=1.8.2 in /Library/Python/2.7/site-packages (from tensorflow==0.6.0)
 - Requirement already up-to-date: setuptools in /Library/Python/2.7/site-packages (from protobuf==3.0.0a3->tensorflow==0.6.0)
+
+## Error!?
+```python
+...
+ImportError: numpy.core.multiarray failed to import
+```
+## How to fix this?
+```shell
+ls /System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/
+```
+to be continued ...
 
 ## Test your tensorflow
 ```python
