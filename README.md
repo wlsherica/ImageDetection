@@ -45,5 +45,9 @@ print(sess.run(a + b))
 
 ```
 
+## Why I can't find *classify_image.py* in the TensorFlow root directory?
+
+According to [this QA](http://stackoverflow.com/questions/34170610/tensorflow-image-recognition-tutorial-seemingly-out-of-date/34171696), you could try to download [classify_image.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/models/image/imagenet/classify_image.py) manually.
+
 ## Reference
 - [Tensorflow tutorial](https://www.tensorflow.org)
